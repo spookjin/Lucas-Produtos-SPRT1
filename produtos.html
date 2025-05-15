@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Produtos - Estoque Ideal</title>
+  <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+  <!-- cabeçalho -->
+  <header class="cabecalho">
+    <div class="cabecalho-container">
+      <div class="logo"><a href="index.html"><img src="logo.png" alt="Estoque Ideal"></a></div>
+      <nav class="nav-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="#">Usuários</a>
+        <a href="#">Produtos</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- conteudo principal -->
+    <section class="content">
+      <div class="cabecalho-tabela">
+        <h2>Gestão de Produtos</h2>
+        <button class="btn small dark">Gerenciar categorias</button>
+      </div>
+
+      <form id="form-produto" class="formulario-produto" onsubmit="adicionarProduto(event)">
+        <h3>Novo Produto</h3>
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria" required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required>
+
+        <label for="preco">Preço Unitário (R$):</label>
+        <input type="number" id="preco" name="preco" step="0.01" required>
+
+        <button type="submit" class="btn add">Salvar Produto</button>
+      </form>
+
+      <table class="tabela-produto">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>PRODUTO</th>
+            <th>CATEGORIA</th>
+            <th>UNIDADE</th>
+            <th>ESTOQUE MÍNIMO</th>
+            <th>ESTOQUE ATUAL</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos">
+          <!-- Dados inseridos via JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="produtos.js"></script>
+</body>
+</html>

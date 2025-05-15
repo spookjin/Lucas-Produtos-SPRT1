@@ -1,0 +1,86 @@
+{
+  "usuarios": [
+    {
+      "id": "u001",
+      "email": "admin@estoqueideal.com",
+      "senha": "admin123",
+      "perfil": "admin"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "p001",
+      "nomeProduto": "Arroz 5kg",
+      "categoria": "Alimentos",
+      "quantidade": 100,
+      "precoUnitario": 29.9
+    },
+    {
+      "id": "ecfc",
+      "nomeProduto": "feijao",
+      "categoria": "condimento",
+      "quantidade": 200,
+      "precoUnitario": 5.9
+    },
+    {
+      "id": "3ecc",
+      "nomeProduto": "maça",
+      "categoria": "alimentos",
+      "quantidade": 500,
+      "precoUnitario": 3.8
+    },
+    {
+      "id": "4834",
+      "nomeProduto": "maça ",
+      "categoria": "alimentos",
+      "quantidade": 200,
+      "precoUnitario": 5.5
+    },
+    {
+      "id": "98ca",
+      "nomeProduto": "sucrilhos",
+      "categoria": "alimentos",
+      "quantidade": 1,
+      "precoUnitario": 9.9
+    },
+    {
+      "id": "9842",
+      "nomeProduto": "feijao",
+      "categoria": "alimentos",
+      "unidade": "17",
+      "estoqueMin": 20,
+      "estoqueAtual": 500,
+      "precoUnitario": 122
+    }
+  ],
+  "planos": [
+    {
+      "id": "1",
+      "nomePlano": "Básico",
+      "descricao": "Ideal para pequenos negócios",
+      "beneficios": [
+        "Controle de produtos",
+        "Cadastro de categorias",
+        "Movimentações simples"
+      ],
+      "preco": 19.99
+    }
+  ],
+  "fornecedoresClientes": [
+    {
+      "id": "f001",
+      "nome": "Distribuidora ABC",
+      "tipo": "fornecedor",
+      "contato": "(31) 99999-8888"
+    }
+  ],
+  "relatorios": [
+    {
+      "id": "r001",
+      "produto": "Arroz 5kg",
+      "quantidadeVendida": 20,
+      "dataVenda": "2025-04-25",
+      "valorTotal": 598
+    }
+  ]
+}
