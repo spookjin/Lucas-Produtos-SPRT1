@@ -1,0 +1,186 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* cabeçalho */
+.cabecalho {
+    background-color: #0a1e3c;
+    padding: 15px 30px;
+    color: white;
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 7rem;
+}
+
+.nav-links a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    margin: 8rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* botoes */
+.btn-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.content {
+    flex: 3 1 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.add {
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 46%;
+    margin-top: 1%;
+}
+
+.edt {
+    background-color: #FFC107;
+    color: black;
+}
+
+.rmv {
+    background-color: #F44336;
+    color: white;
+}
+
+.dark {
+    background-color: #0a1e3c;
+    color: white;
+}
+
+.small {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* Tabela */
+.tabela-produto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-produto th,
+.tabela-produto td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabela-produto th {
+    background-color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Cabeçalho da tabela */
+.cabecalho-tabela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* imputs */
+input[type=text] {
+    width: 20%;
+    padding: .3rem;
+    margin: .2rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+}
+
+input[type=number] {
+    width: 10%;
+    padding: .3rem;
+    margin: .2rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+}
+.rodape {
+    color: rgb(255, 255, 255);
+    background: #01070f;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+} 
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px 10px 0 0;
+    }
+}
